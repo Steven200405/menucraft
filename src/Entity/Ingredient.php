@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: IngredientRepository::class)]
 class Ingredient
 {
-    #[ORM\Id]
+    #[ORM\Id] // Permet de retranscrire la base de donnnées sql
     #[ORM\GeneratedValue]
     #[ORM\Column]
     private ?int $id = null;

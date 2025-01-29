@@ -10,7 +10,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class RecipeController extends AbstractController
 {
-    #[Route('/recipes', name: 'menucraft_recipe_list', methods: ['GET'])]
+    #[Route('/recipes', name: 'menucraft_recipe_list', methods: ['GET'])] //C'est un attribut qui permet de définir le routing
+    
     public function list(): JsonResponse
     {
         $recipes = [
@@ -91,6 +92,6 @@ class RecipeController extends AbstractController
             ],
         ];
 
-        return $this->json($recipes);
+        return $this->json($recipes); // $this provient de AbstractController
     }
 }

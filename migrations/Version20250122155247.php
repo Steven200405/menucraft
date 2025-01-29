@@ -10,7 +10,8 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20250122155247 extends AbstractMigration
+final class Version20250122155247 extends AbstractMigration // On versionne la base de donnée, c'est une version qu'on a dans ce fichier
+// Généré avec d:m:m
 {
     public function getDescription(): string
     {
